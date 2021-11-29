@@ -6,7 +6,7 @@
 //   .catch((err) => {
 //     console.log("ERROR!", err);
 //   });
-
+// This is an example of traversing the Job Board Payload to display the URL as a list item
 const jobs = document.querySelector("#jobs");
 const button = document.querySelector("button");
 
