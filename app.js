@@ -10,6 +10,7 @@
 const jobs = document.querySelector("#jobs");
 const button = document.querySelector("button");
 
+//addNewJob func
 const addNewJob = async () => {
   const jobText = await getJobs();
   const newLI = document.createElement("LI");
