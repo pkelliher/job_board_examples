@@ -18,6 +18,7 @@ const addNewJob = async () => {
   jobs.append(newLI);
 };
 
+//getJobs func
 const getJobs = async () => {
   try {
     const config = { headers: { Accept: "application/json" } };
