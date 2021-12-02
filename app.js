@@ -31,4 +31,5 @@ const getJobs = async () => {
     return "No Jobs available! Sory :(";
   }
 };
+// button event listener click action
 button.addEventListener("click", addNewJob);
