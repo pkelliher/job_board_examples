@@ -28,8 +28,10 @@ const getJobs = async () => {
     );
     return res.data.jobs[0].absolute_url;
   } catch (e) {
-    return "No Jobs available! Sory :(";
+    return "No Jobs available! Sorry :(";
   }
 };
 // button event listener click action
 button.addEventListener("click", addNewJob);
+
+// I will need to update this to display the absoulte URL as a clickable link, referencing an a href elements.
