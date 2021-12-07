@@ -26,7 +26,7 @@ const getJobs = async () => {
       "https://boards-api.greenhouse.io/v1/boards/slayer/jobs",
       config
     );
-    return res.data.jobs[0].absolute_url;
+    return res.data.jobs[0].title;
   } catch (e) {
     return "No Jobs available! Sorry :(";
   }
@@ -35,3 +35,5 @@ const getJobs = async () => {
 button.addEventListener("click", addNewJob);
 
 // I will need to update this to display the absoulte URL as a clickable link, referencing an a href elements.
+
+// I will come back to this later
