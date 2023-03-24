@@ -5,6 +5,8 @@
 //   })
 //   .catch((err) => {
 //     console.log("ERROR!", err);
+
+res.data.questions;
 //   });
 // This is an example of traversing the Job Board Payload to display the URL as a list item
 const jobs = document.querySelector("#jobs");
@@ -23,10 +25,10 @@ const getJobs = async () => {
   try {
     const config = { headers: { Accept: "application/json" } };
     const res = await axios.get(
-      "https://boards-api.greenhouse.io/v1/boards/slayer/jobs",
+      "https://boards-api.greenhouse.io/v1/boards/slayer/jobs?content=true",
       config
     );
-    return res.data.jobs[0].title;
+    return res.data.compliance[0];
   } catch (e) {
     return "No Jobs available! Sorry :(";
   }
